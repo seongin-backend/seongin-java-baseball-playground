@@ -9,6 +9,6 @@ public class StringTest {
     void replace() {
         //clone test2
         String actual = "abc".replace("b", "d");
-        assertThat(actual).isEqualTo("adc");
+        assertThat(actual).isEqualTo("adc");w
     }
 }
