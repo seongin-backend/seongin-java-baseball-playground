@@ -1,8 +1,11 @@
+## fork 받은 프로젝트는 git Contributions가(잔디) 표시 안 됐다
+## 이를 해결하고 기록을 관리하기 위해서 깃 터미널에서 복사할 레퍼지토리를 bare clone 받고 새로 생성한 레퍼지토리로 git push mirror했다(seongin)
+
 ## [NEXTSTEP 플레이그라운드의 미션 진행 과정](https://github.com/next-step/nextstep-docs/blob/master/playground/README.md)
 
 ---
 ## 학습 효과를 높이기 위해 추천하는 미션 진행 방법
-
+Cancel changes
 ---
 1. 피드백 강의 전까지 미션 진행 
 > 피드백 강의 전까지 혼자 힘으로 미션 진행. 미션을 진행하면서 하나의 작업이 끝날 때 마다 add, commit
