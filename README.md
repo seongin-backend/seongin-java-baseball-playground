@@ -1,4 +1,4 @@
-## fork 받은 프로젝트는 git Contributions가(잔디) 표시 안 됐다
+ fork 받은 프로젝트는 git Contributions가(잔디) 표시 안 됐다
 ## 이를 해결하고 기록을 관리하기 위해서 깃 터미널에서 복사할 레퍼지토리를 bare clone 받고 새로 생성한 레퍼지토리로 git push mirror했다(seongin)
 
 ## [NEXTSTEP 플레이그라운드의 미션 진행 과정](https://github.com/next-step/nextstep-docs/blob/master/playground/README.md)
