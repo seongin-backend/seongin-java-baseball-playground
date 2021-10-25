@@ -29,7 +29,7 @@ public class StringTest {
     }
 
     @Test
-    void substring() {  231312
+    void substring() {
 
         //0. 학습테스트실습
 
