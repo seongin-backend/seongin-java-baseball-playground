@@ -29,7 +29,7 @@ public class StringTest {
     }
 
     @Test
-    void substring() {
+    void substring() { //branch 테스트
 
         //0. 학습테스트실습
 
