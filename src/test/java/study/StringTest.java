@@ -35,6 +35,6 @@ public class StringTest {
         String str = "(1,2)";
         str = str.substring(0,1);
         str = str.substring(str.length()-1, str.length());
-        assertThat(str).contains("1,2");
+        assertThat(str).contains("1,2");2
     }
 }
