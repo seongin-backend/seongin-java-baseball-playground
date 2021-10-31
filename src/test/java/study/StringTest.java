@@ -32,7 +32,7 @@ public class StringTest {
     void substring() {
         /*요구사항 2*/
         /*"(1,2)" 값이 주어졌을 때 String의 substring() 메소드를 활용해 ()을 제거하고 "1,2"를 반환하도록 구현한다.*/
-        String str = "(1,2)2s";
+        String str = "(1,2)";
         str = str.substring(0,2);
         str = str.substring(str.length()-1, str.length());
         assertThat(str).contains("1,2");
