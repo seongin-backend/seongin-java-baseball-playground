@@ -44,6 +44,6 @@ public class StringTest {
 
         /*charAt 특정위치찾기*/
         String str = "abc";
-        System.out.println(str.charAt(3));
+        System.out.println(str.charAt(7));
     }
 }
