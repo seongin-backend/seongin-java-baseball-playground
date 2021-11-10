@@ -46,13 +46,12 @@ public class StringTest {
     void charAt() {
 
         /*charAt 특정위치찾기*/
+
         String str = "abc";
         assertThatThrownBy(() -> {
             str.charAt(3);
         }).isInstanceOf(IndexOutOfBoundsException.class)
                 .hasMessageContaining("Index: 2, Size: 2");
-
-
 
     }
 
