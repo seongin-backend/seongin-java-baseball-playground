@@ -43,7 +43,7 @@ public class StringTest {
     void charAt() {
 
         /*charAt 특정위치찾기*/
-        String str = "abc2";
+        String str = "abc";
         System.out.println(str.charAt(7));
     }
 }
