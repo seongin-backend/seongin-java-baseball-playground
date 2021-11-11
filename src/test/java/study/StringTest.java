@@ -1,8 +1,10 @@
 package study;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 public class StringTest {
     @Test
@@ -40,10 +42,18 @@ public class StringTest {
     }
 
     @Test
+    @DisplayName("StringIndexOutOfBoundsException 에러에 대한 Exception")
     void charAt() {
 
         /*charAt 특정위치찾기*/
+
         String str = "abc";
-        System.out.println(str.charAt(7));
+        assertThatThrownBy(() -> {
+            str.charAt(3);
+        }).isInstanceOf(IndexOutOfBoundsException.class)
+                .hasMessageContaining("Index: 2, Size: 2");
+
     }
+
+
 }
