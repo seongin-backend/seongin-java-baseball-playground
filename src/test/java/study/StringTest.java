@@ -47,7 +47,7 @@ public class StringTest {
 
         /*charAt 특정위치찾기*/
 
-        String str = "abc";
+        String str = "abc2";
         assertThatThrownBy(() -> {
             str.charAt(3);
         }).isInstanceOf(IndexOutOfBoundsException.class)
