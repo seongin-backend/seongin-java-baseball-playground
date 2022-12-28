@@ -44,9 +44,7 @@ public class StringTest {
     @Test
     @DisplayName("StringIndexOutOfBoundsException 에러에 대한 Exception")
     void charAt() {
-
         /*charAt 특정위치찾기*/
-
         String str = "abc";
         assertThatThrownBy(() -> {
             str.charAt(3);
@@ -54,6 +52,5 @@ public class StringTest {
                 .hasMessageContaining("Index: 2, Size: 2");
 
     }
-
 
 }
