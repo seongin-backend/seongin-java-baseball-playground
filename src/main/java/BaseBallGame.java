@@ -34,7 +34,10 @@ public class BaseBallGame {
         }
         if(intBall>0 && intStrike>0) { System.out.println(intBall+"볼 "+intStrike+"스트라이크"); return "Fail";}
         if(intStrike>0) {
-            if(intStrike == 3) return "Success";
+            if(intStrike == 3) {
+                System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
+                return "Success";
+            }
             System.out.println(intStrike+"스트라이크");
             return "Fail";
         }
@@ -43,8 +46,19 @@ public class BaseBallGame {
         return "Fail";
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        BaseBallGame baseBallGame = new BaseBallGame();
+        String startGubn = "1";
+        while("1".equals(startGubn)) {
+            String result = "Fail";
+            String answer = baseBallGame.chooseAnswer();
+            while(result=="Fail") {
+                String input = baseBallGame.chooseInput();
+                result = baseBallGame.compareAnswerAndInput(answer, input);
+            }
+            System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+            startGubn = new BufferedReader(new InputStreamReader(System.in)).readLine();
+        }
     }
 
 }
